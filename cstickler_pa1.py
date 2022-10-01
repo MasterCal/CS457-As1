@@ -4,7 +4,8 @@
 import os
 import sys
 
-sqlFile = sys.argv[1]
+if(sys.argv[1] != NULL):
+  sqlFile = sys.argv[1]
 
 def main():
   filePath = os.getcwd() + sqlFile
