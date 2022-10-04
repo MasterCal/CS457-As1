@@ -29,8 +29,7 @@ def main():
             os.system("mkdir " + dbName)
           except FileExistsError:
             print("!Failed to create database " + dbName + " because it already exists.")
-            break
-          finally:
+          else:
             print("Database " + dbName + " created.")
        elif(parsedCmd[1].upper() == "TABLE"):
           tbName = parsedCmd[2]
